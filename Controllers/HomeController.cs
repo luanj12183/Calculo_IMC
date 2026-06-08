@@ -16,7 +16,7 @@ namespace Calculo_IMC.Controllers
         {
             if (ModelState.IsValid) 
             {
-                model.ResultadoImc = model.Peso / (model.Altura * model.Altura);
+                model.ResultadoImc = model.Peso.Value / (model.Altura.Value * model.Altura.Value);
             
                 if (model.ResultadoImc < 18.5)
             {
